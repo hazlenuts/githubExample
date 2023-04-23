@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+	font-family: "SF PRo";
+	color: black;
+	background-color: white;
+	margin:0;
+	padding:0;
+}
+
+body {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap:3rem;
+	margin-top: 4rem;
+	height:75vh;
+}
+
+.text-container {
+	display:flex;
+	flex-direction:column;
+	gap:1.5rem;
+}
+
+img {
+	width:200px;
+	height:200px;	
+	filter: drop-shadow(0 2px 15px #fa90aa)
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		background-color: #202025;
+		color:white;
+	} img {
+		filter: drop-shadow(0 2px 15px #90faaa)
+	}
+}
